@@ -31,3 +31,69 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Security - API Keys and Secrets ###
+# Local configuration files with secrets
+**/application-local.properties
+**/application-dev.properties
+**/application-secret.properties
+.env
+.env.local
+.env.*.local
+
+# API Keys and tokens
+**/*api-key*
+**/*token*
+**/*secret*
+
+### Database ###
+# H2 Database files
+*.db
+*.trace.db
+*.lock.db
+/data/
+
+### Logs ###
+logs/
+*.log
+*.log.*
+
+### OS ###
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# Linux
+*~
+.directory
+
+### Temporary files ###
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+### Crypto Tracker Specific ###
+# Portfolio backup files
+portfolio-backup/
+crypto-data/
+historical-data/
+
+### Docker ###
+Dockerfile.local
+docker-compose.override.yml
+
+### Documentation ###
+docs/build/
+site/
